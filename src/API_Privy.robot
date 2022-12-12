@@ -8,13 +8,16 @@ ${grub_id}      alfin grub
 ${token}        token1234
 ${base_url}     http://pretest-qa.dcidev.id/documentation/v1#
 ${Request_url}  http://pretest-qa.dcidev.id
-${Image_Upload} GET FILE
-
+${random_string}=   Generate Random String    12    chars=[NUMBERS]
 
 *** Test Cases ***
 
 Quick Get Request Test
     ${response}=    GET   ${base_url}
+
+# Test get random phone number
+#     ${random_string}=   Generate Random String    12    chars=[NUMBERS]
+#     Log   ${random_string}
 
 TC1_message : Operations about messages
     ${response}=   GET   ${Request_url}/api/v1/message/${user_id}  params=Authorization=asdwsxxxawda, params=user_id=${user_id}   expected_status=200
@@ -35,17 +38,13 @@ TC4_profile : Operations about profiles
     ${response}=   GET   ${Request_url}/api/v1/profile/profile/me  params=Authorization=auhusdaw22xxx   expected_status=200
 
 TC5_register : Operations about registers
-    ${response}=   POST   ${Request_url}/api/v1/register/remove  params=phone=08955547741   expected_status=201
+    ${response}=   POST   ${Request_url}/api/v1/register/remove  params=phone=${random_string}   expected_status=201
     ${response}=   POST   ${Request_url}/api/v1/register/otp/request  params=phone=08955547741   expected_status=201
     ${response}=   POST   ${Request_url}/api/v1/register/otp/match  params=user_id=${user_id}, params=otp_code=55223   expected_status=201
-    ${response}=   POST   ${Request_url}/api/v1/register  params=phone=0895468487865, params=password=KapanOnePieceTamat, params=country=Indonesia, params=latlong=zxcwssss, params=device_token=android17, params=device_type=1   expected_status=201
+    ${response}=   POST   ${Request_url}/api/v1/register  params=phone=${random_string}, params=password=KapanOnePieceTamat, params=country=Indonesia, params=latlong=zxcwssss, params=device_token=android17, params=device_type=1   expected_status=201
 
 TC6_uploads : Operations about uploads
     ${response}=   POST   ${Request_url}/api/v1/uploads/cover  params=Authorization=awdsa2asxs, params=image=N:\Privy_Test\image jmeter\dw.png   expected_status=201
     ${response}=   POST   ${Request_url}/api/v1/uploads/profile/default  params=Authorization=awdsa2asxs, params=id=ssxawsdaw   expected_status=201
     ${response}=   DELETE   ${Request_url}/api/v1/uploads/profile  params=Authorization=awdsa2asxs, params=id=ssxawsdaw   expected_status=204
     ${response}=   POST   ${Request_url}/api/v1/uploads/profile  params=Authorization=awdsa2asxs, params=image=N:\Privy_Test\image jmeter\dw.png   expected_status=201
-
-# Quick Get A JSON Body Test
-#     ${response}=    GET  https://jsonplaceholder.typicode.com/posts/1
-#     Should Be Equal As Strings    1  ${response.json()}[id]

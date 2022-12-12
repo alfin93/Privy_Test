@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20221212 17:46:16.867" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20221212 17:57:08.717" rpa="false" schemaversion="3">
 <suite id="s1" name="API Privy" source="N:\Privy_Test\src\API_Privy.robot">
-<test id="s1-t1" name="Quick Get Request Test" line="16">
+<test id="s1-t1" name="Quick Get Request Test" line="15">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${base_url}</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20221212 17:46:17.025" level="INFO">GET Request : url=http://pretest-qa.dcidev.id/documentation/v1 
+<msg timestamp="20221212 17:57:08.868" level="INFO">GET Request : url=http://pretest-qa.dcidev.id/documentation/v1 
  path_url=/documentation/v1 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:17.025" level="INFO">GET Response : url=http://pretest-qa.dcidev.id/documentation/v1 
+<msg timestamp="20221212 17:57:08.868" level="INFO">GET Response : url=http://pretest-qa.dcidev.id/documentation/v1 
  status=200, reason=OK 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:16 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'ETag': 'W/"4d82767bbde095747b58c525d66016e0"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': 'cc2e4718-928e-4760-83fe-4c258dbdf6f3', 'X-Runtime': '0.004379', 'Content-Encoding': 'gzip'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:08 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-Frame-Options': 'SAMEORIGIN', 'X-XSS-Protection': '1; mode=block', 'X-Content-Type-Options': 'nosniff', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'ETag': 'W/"4d82767bbde095747b58c525d66016e0"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': '2cfe18ea-f717-4344-ab2c-b8b89bc137f0', 'X-Runtime': '0.004167', 'Content-Encoding': 'gzip'} 
  body=&lt;!DOCTYPE html&gt;
 &lt;html data-swagger-options="{&amp;quot;url&amp;quot;:&amp;quot;/json&amp;quot;,&amp;quot;app_name&amp;quot;:&amp;quot;Swagger&amp;quot;,&amp;quot;app_url&amp;quot;:&amp;quot;/api/v1/documentation&amp;quot;,&amp;quot;headers&amp;quot;:{},&amp;quot;api_auth&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;api_key_name&amp;quot;:&amp;quot;api_key&amp;quot;,&amp;quot;api_key_type&amp;quot;:&amp;quot;query&amp;quot;,&amp;quot;api_key_default_value&amp;quot;:&amp;quot;&amp;quot;,&amp;quot;doc_expansion&amp;quot;:&amp;quot;none&amp;quot;,&amp;quot;supported_submit_methods&amp;quot;:[&amp;quot;get&amp;quot;,&amp;quot;post&amp;quot;,&amp;quot;put&amp;quot;,&amp;quot;delete&amp;quot;,&amp;quot;patch&amp;quot;],&amp;quot;before_action_proc&amp;quot;:{},&amp;quot;hide_url_input&amp;quot;:true,&amp;quot;hide_api_key_input&amp;quot;:true}"&gt;
 &lt;head&gt;
@@ -110,30 +110,30 @@
 &lt;/html&gt;
  
  </msg>
-<msg timestamp="20221212 17:46:17.026" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221212 17:46:16.964" endtime="20221212 17:46:17.026"/>
+<msg timestamp="20221212 17:57:08.869" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221212 17:57:08.809" endtime="20221212 17:57:08.869"/>
 </kw>
-<status status="PASS" starttime="20221212 17:46:16.964" endtime="20221212 17:46:17.026"/>
+<status status="PASS" starttime="20221212 17:57:08.809" endtime="20221212 17:57:08.869"/>
 </test>
-<test id="s1-t2" name="TC1_message : Operations about messages" line="19">
+<test id="s1-t2" name="TC1_message : Operations about messages" line="22">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/message/${user_id}</arg>
 <arg>params=Authorization=asdwsxxxawda, params=user_id=${user_id}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20221212 17:46:17.095" level="INFO">GET Request : url=http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 
+<msg timestamp="20221212 17:57:08.924" level="INFO">GET Request : url=http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 
  path_url=/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:17.095" level="INFO">GET Response : url=http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 
+<msg timestamp="20221212 17:57:08.924" level="INFO">GET Response : url=http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 
  status=401, reason=Unauthorized 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:16 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '49', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '9cc5c673-79ec-46c5-9904-d8c0d6a8c12b', 'X-Runtime': '0.003598'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:08 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '49', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '8dee79f7-d55b-4d3d-953e-55d5b984d25a', 'X-Runtime': '0.003409'} 
  body={"error":{"code":401,"errors":["Invalid token"]}} 
  </msg>
-<msg timestamp="20221212 17:46:17.095" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 Expected status: 401 != 200</msg>
-<status status="FAIL" starttime="20221212 17:46:17.027" endtime="20221212 17:46:17.096"/>
+<msg timestamp="20221212 17:57:08.924" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 Expected status: 401 != 200</msg>
+<status status="FAIL" starttime="20221212 17:57:08.870" endtime="20221212 17:57:08.925"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -141,51 +141,51 @@
 <arg>params=Authorization=asdwsxxxawda, params=user_id=${user_id}, params=message=API automation</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.097" endtime="20221212 17:46:17.097"/>
+<status status="NOT RUN" starttime="20221212 17:57:08.926" endtime="20221212 17:57:08.926"/>
 </kw>
-<status status="FAIL" starttime="20221212 17:46:17.027" endtime="20221212 17:46:17.097">Url: http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 Expected status: 401 != 200</status>
+<status status="FAIL" starttime="20221212 17:57:08.870" endtime="20221212 17:57:08.926">Url: http://pretest-qa.dcidev.id/api/v1/message/AWO7813?Authorization=asdwsxxxawda,%20params=user_id=AWO7813 Expected status: 401 != 200</status>
 </test>
-<test id="s1-t3" name="TC2_notification : Operations about notifications" line="23">
+<test id="s1-t3" name="TC2_notification : Operations about notifications" line="26">
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/notification/${grub_id}/${token}</arg>
 <arg>params=grub_id=${grub_id}, params=token=${token}</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221212 17:46:17.811" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/notification/alfin%20grub/token1234?grub_id=alfin%20grub,%20params=token=token1234 
+<msg timestamp="20221212 17:57:09.628" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/notification/alfin%20grub/token1234?grub_id=alfin%20grub,%20params=token=token1234 
  path_url=/api/v1/notification/alfin%20grub/token1234?grub_id=alfin%20grub,%20params=token=token1234 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:17.811" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/notification/alfin%20grub/token1234?grub_id=alfin%20grub,%20params=token=token1234 
+<msg timestamp="20221212 17:57:09.628" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/notification/alfin%20grub/token1234?grub_id=alfin%20grub,%20params=token=token1234 
  status=201, reason=Created 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:17 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '9', 'Connection': 'keep-alive', 'ETag': 'W/"68e7a69974a641064a6a5ae8b1a00997"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': 'bf4f3e67-ee62-40ae-991f-0ba9c1ba7f6a', 'X-Runtime': '0.659169'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:09 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '9', 'Connection': 'keep-alive', 'ETag': 'W/"68e7a69974a641064a6a5ae8b1a00997"', 'Cache-Control': 'max-age=0, private, must-revalidate', 'X-Request-Id': '28653713-a205-42c9-8e4e-ef673403a17e', 'X-Runtime': '0.647663'} 
  body="success" 
  </msg>
-<msg timestamp="20221212 17:46:17.811" level="INFO">${response} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20221212 17:46:17.098" endtime="20221212 17:46:17.811"/>
+<msg timestamp="20221212 17:57:09.628" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20221212 17:57:08.927" endtime="20221212 17:57:09.628"/>
 </kw>
-<status status="PASS" starttime="20221212 17:46:17.098" endtime="20221212 17:46:17.811"/>
+<status status="PASS" starttime="20221212 17:57:08.927" endtime="20221212 17:57:09.628"/>
 </test>
-<test id="s1-t4" name="TC3_oauth : Operations about oauths" line="26">
+<test id="s1-t4" name="TC3_oauth : Operations about oauths" line="29">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/oauth/credentials</arg>
 <arg>params=access_token=auhusdaw22xxx</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20221212 17:46:17.869" level="INFO">GET Request : url=http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx 
+<msg timestamp="20221212 17:57:09.685" level="INFO">GET Request : url=http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx 
  path_url=/api/v1/oauth/credentials?access_token=auhusdaw22xxx 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:17.869" level="INFO">GET Response : url=http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx 
+<msg timestamp="20221212 17:57:09.685" level="INFO">GET Response : url=http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx 
  status=401, reason=Unauthorized 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '62', 'Connection': 'keep-alive', 'Cache-Control': 'no-store', 'Pragma': 'no-cache', 'WWW-Authenticate': 'Bearer realm="Doorkeeper", error="invalid_token", error_description="The access token is invalid"', 'X-Request-Id': 'b70c224b-bd96-41e4-b2b2-98b517a86b8a', 'X-Runtime': '0.004744'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:09 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '62', 'Connection': 'keep-alive', 'Cache-Control': 'no-store', 'Pragma': 'no-cache', 'WWW-Authenticate': 'Bearer realm="Doorkeeper", error="invalid_token", error_description="The access token is invalid"', 'X-Request-Id': '6f932750-74c2-49f3-9090-2fa3440a83bc', 'X-Runtime': '0.004744'} 
  body={"error":{"errors":[{"error":"The access token is invalid"}]}} 
  </msg>
-<msg timestamp="20221212 17:46:17.869" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx Expected status: 401 != 200</msg>
-<status status="FAIL" starttime="20221212 17:46:17.813" endtime="20221212 17:46:17.870"/>
+<msg timestamp="20221212 17:57:09.685" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx Expected status: 401 != 200</msg>
+<status status="FAIL" starttime="20221212 17:57:09.629" endtime="20221212 17:57:09.686"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -193,7 +193,7 @@
 <arg>params=phone=0898547878888, params=password=APIPrivyID, params=latlong, params=device_token, params=device_type=1</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.870" endtime="20221212 17:46:17.870"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.686" endtime="20221212 17:57:09.686"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -201,29 +201,29 @@
 <arg>params=access_token=auhusdaw22xxx</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.870" endtime="20221212 17:46:17.870"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.686" endtime="20221212 17:57:09.686"/>
 </kw>
-<status status="FAIL" starttime="20221212 17:46:17.812" endtime="20221212 17:46:17.871">Url: http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx Expected status: 401 != 200</status>
+<status status="FAIL" starttime="20221212 17:57:09.629" endtime="20221212 17:57:09.687">Url: http://pretest-qa.dcidev.id/api/v1/oauth/credentials?access_token=auhusdaw22xxx Expected status: 401 != 200</status>
 </test>
-<test id="s1-t5" name="TC4_profile : Operations about profiles" line="31">
+<test id="s1-t5" name="TC4_profile : Operations about profiles" line="34">
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/profile/career</arg>
 <arg>params=Authorization=auhusdaw22xxx, params=position=QA Engineer, params=company_name=LandX, params=starting_from=12-12-2022, params=ending_in=12-12-2023</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221212 17:46:17.925" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 
+<msg timestamp="20221212 17:57:09.743" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 
  path_url=/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:17.926" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 
+<msg timestamp="20221212 17:57:09.743" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 
  status=401, reason=Unauthorized 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:17 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '49', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '79627b99-d7a2-40bc-997e-2b8c6da2c9b9', 'X-Runtime': '0.003560'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:09 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '49', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '5b09bc7a-5af4-4c01-8572-42796214132a', 'X-Runtime': '0.003697'} 
  body={"error":{"code":401,"errors":["Invalid token"]}} 
  </msg>
-<msg timestamp="20221212 17:46:17.926" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 Expected status: 401 != 201</msg>
-<status status="FAIL" starttime="20221212 17:46:17.872" endtime="20221212 17:46:17.926"/>
+<msg timestamp="20221212 17:57:09.743" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 Expected status: 401 != 201</msg>
+<status status="FAIL" starttime="20221212 17:57:09.688" endtime="20221212 17:57:09.744"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -231,7 +231,7 @@
 <arg>params=Authorization=auhusdaw22xxx, params=school_name=SMK 3 Yogyakarta, params=graduation_time=12-12-2022</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.927" endtime="20221212 17:46:17.927"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.744" endtime="20221212 17:57:09.744"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -239,7 +239,7 @@
 <arg>params=Authorization=auhusdaw22xxx, params=name=alfin wicaksono, params=gender=1, params=birthday=12-12-2022, params=hometown=Yogyakarta, params=bio=aku ganteng makasih</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.927" endtime="20221212 17:46:17.927"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.744" endtime="20221212 17:57:09.744"/>
 </kw>
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
@@ -247,29 +247,29 @@
 <arg>params=Authorization=auhusdaw22xxx</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a GET request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.927" endtime="20221212 17:46:17.927"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.745" endtime="20221212 17:57:09.745"/>
 </kw>
-<status status="FAIL" starttime="20221212 17:46:17.872" endtime="20221212 17:46:17.928">Url: http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 Expected status: 401 != 201</status>
+<status status="FAIL" starttime="20221212 17:57:09.687" endtime="20221212 17:57:09.745">Url: http://pretest-qa.dcidev.id/api/v1/profile/career?Authorization=auhusdaw22xxx,%20params=position=QA%20Engineer,%20params=company_name=LandX,%20params=starting_from=12-12-2022,%20params=ending_in=12-12-2023 Expected status: 401 != 201</status>
 </test>
-<test id="s1-t6" name="TC5_register : Operations about registers" line="37">
+<test id="s1-t6" name="TC5_register : Operations about registers" line="40">
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/register/remove</arg>
-<arg>params=phone=08955547741</arg>
+<arg>params=phone=${random_string}</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221212 17:46:17.987" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/register/remove?phone=08955547741 
- path_url=/api/v1/register/remove?phone=08955547741 
+<msg timestamp="20221212 17:57:09.807" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/register/remove?phone=Generate%20Random%20String%2012%20chars=[NUMBERS] 
+ path_url=/api/v1/register/remove?phone=Generate%20Random%20String%2012%20chars=[NUMBERS] 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:17.987" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/register/remove?phone=08955547741 
+<msg timestamp="20221212 17:57:09.807" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/register/remove?phone=Generate%20Random%20String%2012%20chars=[NUMBERS] 
  status=500, reason=Internal Server Error 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:17 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '77', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '2c1cbd28-d69e-4092-a86f-4b10d9f57be2', 'X-Runtime': '0.007031'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:09 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '77', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '9fe474e0-8f56-44e2-b0ea-03fa6917abcf', 'X-Runtime': '0.005213'} 
  body={"error":{"code":500,"errors":["undefined method `phone' for nil:NilClass"]}} 
  </msg>
-<msg timestamp="20221212 17:46:17.987" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/register/remove?phone=08955547741 Expected status: 500 != 201</msg>
-<status status="FAIL" starttime="20221212 17:46:17.929" endtime="20221212 17:46:17.988"/>
+<msg timestamp="20221212 17:57:09.807" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/register/remove?phone=Generate%20Random%20String%2012%20chars=[NUMBERS] Expected status: 500 != 201</msg>
+<status status="FAIL" starttime="20221212 17:57:09.746" endtime="20221212 17:57:09.807"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -277,7 +277,7 @@
 <arg>params=phone=08955547741</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.988" endtime="20221212 17:46:17.988"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.808" endtime="20221212 17:57:09.808"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -285,37 +285,37 @@
 <arg>params=user_id=${user_id}, params=otp_code=55223</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.989" endtime="20221212 17:46:17.989"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.808" endtime="20221212 17:57:09.808"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/register</arg>
-<arg>params=phone=0895468487865, params=password=KapanOnePieceTamat, params=country=Indonesia, params=latlong=zxcwssss, params=device_token=android17, params=device_type=1</arg>
+<arg>params=phone=${random_string}, params=password=KapanOnePieceTamat, params=country=Indonesia, params=latlong=zxcwssss, params=device_token=android17, params=device_type=1</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:17.989" endtime="20221212 17:46:17.989"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.808" endtime="20221212 17:57:09.808"/>
 </kw>
-<status status="FAIL" starttime="20221212 17:46:17.929" endtime="20221212 17:46:17.989">Url: http://pretest-qa.dcidev.id/api/v1/register/remove?phone=08955547741 Expected status: 500 != 201</status>
+<status status="FAIL" starttime="20221212 17:57:09.746" endtime="20221212 17:57:09.808">Url: http://pretest-qa.dcidev.id/api/v1/register/remove?phone=Generate%20Random%20String%2012%20chars=[NUMBERS] Expected status: 500 != 201</status>
 </test>
-<test id="s1-t7" name="TC6_uploads : Operations about uploads" line="43">
+<test id="s1-t7" name="TC6_uploads : Operations about uploads" line="46">
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
 <arg>${Request_url}/api/v1/uploads/cover</arg>
 <arg>params=Authorization=awdsa2asxs, params=image=N:\Privy_Test\image jmeter\dw.png</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221212 17:46:18.046" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png 
+<msg timestamp="20221212 17:57:09.880" level="INFO">POST Request : url=http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png 
  path_url=/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png 
  headers={'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20221212 17:46:18.046" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png 
+<msg timestamp="20221212 17:57:09.880" level="INFO">POST Response : url=http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png 
  status=401, reason=Unauthorized 
- headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:46:17 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '49', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '8e717aa7-8a01-4238-b2f4-c6de5bb0876e', 'X-Runtime': '0.003510'} 
+ headers={'Server': 'nginx/1.18.0 (Ubuntu)', 'Date': 'Mon, 12 Dec 2022 10:57:09 GMT', 'Content-Type': 'application/json; charset=UTF-8', 'Content-Length': '49', 'Connection': 'keep-alive', 'Cache-Control': 'no-cache', 'X-Request-Id': '731be314-2319-4a15-ba03-2a6d829ae2dc', 'X-Runtime': '0.003950'} 
  body={"error":{"code":401,"errors":["Invalid token"]}} 
  </msg>
-<msg timestamp="20221212 17:46:18.046" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png Expected status: 401 != 201</msg>
-<status status="FAIL" starttime="20221212 17:46:17.991" endtime="20221212 17:46:18.046"/>
+<msg timestamp="20221212 17:57:09.880" level="FAIL">Url: http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png Expected status: 401 != 201</msg>
+<status status="FAIL" starttime="20221212 17:57:09.810" endtime="20221212 17:57:09.881"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -323,7 +323,7 @@
 <arg>params=Authorization=awdsa2asxs, params=id=ssxawsdaw</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:18.047" endtime="20221212 17:46:18.047"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.881" endtime="20221212 17:57:09.881"/>
 </kw>
 <kw name="DELETE" library="RequestsLibrary">
 <var>${response}</var>
@@ -331,7 +331,7 @@
 <arg>params=Authorization=awdsa2asxs, params=id=ssxawsdaw</arg>
 <arg>expected_status=204</arg>
 <doc>Sends a DELETE request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:18.047" endtime="20221212 17:46:18.047"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.881" endtime="20221212 17:57:09.881"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -339,11 +339,11 @@
 <arg>params=Authorization=awdsa2asxs, params=image=N:\Privy_Test\image jmeter\dw.png</arg>
 <arg>expected_status=201</arg>
 <doc>Sends a POST request.</doc>
-<status status="NOT RUN" starttime="20221212 17:46:18.047" endtime="20221212 17:46:18.047"/>
+<status status="NOT RUN" starttime="20221212 17:57:09.882" endtime="20221212 17:57:09.882"/>
 </kw>
-<status status="FAIL" starttime="20221212 17:46:17.990" endtime="20221212 17:46:18.048">Url: http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png Expected status: 401 != 201</status>
+<status status="FAIL" starttime="20221212 17:57:09.809" endtime="20221212 17:57:09.882">Url: http://pretest-qa.dcidev.id/api/v1/uploads/cover?Authorization=awdsa2asxs,%20params=image=N:Privy_Testimage%20jmeterdw.png Expected status: 401 != 201</status>
 </test>
-<status status="FAIL" starttime="20221212 17:46:16.868" endtime="20221212 17:46:18.049"/>
+<status status="FAIL" starttime="20221212 17:57:08.718" endtime="20221212 17:57:09.883"/>
 </suite>
 <statistics>
 <total>
@@ -356,6 +356,5 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20221212 17:46:16.868" level="ERROR">Error in file 'N:\Privy_Test\src\API_Privy.robot' on line 11: Setting variable '${Image_Upload} GET FILE' failed: Invalid variable name '${Image_Upload} GET FILE'.</msg>
 </errors>
 </robot>
