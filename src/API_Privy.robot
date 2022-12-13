@@ -8,8 +8,6 @@ ${grub_id}      alfin grub
 ${token}        token1234
 ${base_url}     http://pretest-qa.dcidev.id/documentation/v1#
 ${Request_url}  http://pretest-qa.dcidev.id
-${random_numbers}=    Evaluate    random.sample(range(628987544444, 628987544999), 1)[0]
-${random_auth}=   Generate Random String    12    [LOWER]
 
 *** Keywords ***
 Random number
